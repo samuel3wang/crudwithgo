@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"crud/psql"
+	"crud/api"
 )
 func main()  {
 	fmt.Println("server run")
@@ -12,7 +13,7 @@ func main()  {
 
 	// db.AutoMigrate(&api.People{})
 	psql.ConnectDB()
-	RegisterRouter()
+	api.RegisterRouter()
 }
 
 // https://www.youtube.com/watch?v=alcanyAiv14&list=PLYp_Kd32Xvcq2Qyxu8pnJ0ZGAz9ewBZ3H&index=8

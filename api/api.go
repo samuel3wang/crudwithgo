@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"net/http"
@@ -19,7 +19,7 @@ func Getdata(r *gin.Context){
 	var people []People
 	
 	// limit := r.DefaultQuery("limit", "10")
-	limit := 10
+	limit := 1000
 	// offset := r.DefaultQuery("offset", "1")
 	offset := 0
 
