@@ -89,11 +89,6 @@ func Delete(r *gin.Context){
 		return
 	}
 	
-
-	// person := getById(r)
-	// if person.Name == "" {
-	// 	return
-	// }
 	psql.DB.Delete(&person)
 	r.JSON(http.StatusOK, gin.H{
 		"message" : "",

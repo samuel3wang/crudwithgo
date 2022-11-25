@@ -9,3 +9,8 @@ type People struct {
 	Name   string	`json:"name"`
 	Ex     string	`json:"ex"`
 }
+type User struct {
+	Userid 		string 	`json:"userid"   binding:"required"`
+	Account 	string 	`json:"account"  binding:"required"`
+	Password 	string 	`json:"password" binding:"required"`
+}

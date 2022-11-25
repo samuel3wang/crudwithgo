@@ -11,8 +11,8 @@ func main()  {
 
 	gin.SetMode(gin.ReleaseMode)
 
-	// db.AutoMigrate(&api.People{})
 	psql.ConnectDB()
+	//psql.DB.AutoMigrate(&api.User{})
 	api.RegisterRouter()
 }
 
